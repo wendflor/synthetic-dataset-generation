@@ -1,1 +1,1 @@
-docker build -t generate_parcel2d .
+docker build -t generate_synthetic_dataset .

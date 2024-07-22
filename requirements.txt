@@ -1,8 +1,9 @@
-pandas
+numpy
+pandas==1.2.4
 pillow
 matplotlib
 tqdm
-scikit-image==0.18.*
+scikit-image==0.18.3
 git+https://github.com/lamhoangtung/pyblur.git
 fpie
 opencv-python

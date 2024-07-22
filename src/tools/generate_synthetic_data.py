@@ -16,7 +16,7 @@ DATA_DIR = ROOT / "data"
 
 
 if __name__ == "__main__":
-    dataset_name = "demo_dataset"  # Give your dataset a name
+    dataset_name = "demo_dataset_test"  # Give your dataset a name
     output_dir = (DATA_DIR / dataset_name).resolve()
     if output_dir.exists():
         shutil.rmtree(output_dir.as_posix())

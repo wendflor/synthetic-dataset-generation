@@ -8,13 +8,13 @@ BLENDING_LIST = [
     # "box",
     "motion",
     # "mixed",
-    # "illumination",
-    # "gamma_correction",
+    "illumination",
+    "gamma_correction",
 ]
 
 # Parameters for images
 MIN_NO_OF_OBJECTS = 1
-MAX_NO_OF_OBJECTS = 4
+MAX_NO_OF_OBJECTS = 10
 MIN_NO_OF_DISTRACTOR_OBJECTS = 2
 MAX_NO_OF_DISTRACTOR_OBJECTS = 4
 MAX_ATTEMPTS_TO_SYNTHESIZE = 20
@@ -23,7 +23,7 @@ MAX_ATTEMPTS_TO_SYNTHESIZE = 20
 MIN_SCALE = 0.15  # min scale for scale augmentation (maximum extend in each direction, 1=same size as image)
 MAX_SCALE = 0.4  # max scale for scale augmentation (maximum extend in each direction, 1=same size as image)
 MAX_UPSCALING = 1.2  # increase size of foreground by max this
-MAX_DEGREES = 30  # max rotation allowed during rotation augmentation
+MAX_DEGREES = 90  # max rotation allowed during rotation augmentation
 MAX_TRUNCATION_FRACTION = (
     0.25  # max fraction to be truncated = MAX_TRUNCACTION_FRACTION*(WIDTH/HEIGHT)
 )
@@ -34,7 +34,8 @@ MINFILTER_SIZE = 3
 
 # Other
 OBJECT_CATEGORIES = [
-    {"id": 0, "name": "box"},
+    {"id": 0, "name": "blue_truck_cab"}, 
+    
     {"id": 2, "name": "distractor"},
 ]  # note: distractor needs to be second position
 IGNORE_LABELS = [OBJECT_CATEGORIES[1]["id"]]  # list of category ID for which no annotations will be generated

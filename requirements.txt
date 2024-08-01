@@ -1,10 +1,10 @@
-numpy
+numpy==1.19.5
 pandas==1.2.4
-pillow
-matplotlib
-tqdm
+pillow==8.1.0
+matplotlib==3.3.4
+tqdm==4.56.0
 scikit-image==0.18.3
 git+https://github.com/lamhoangtung/pyblur.git
-fpie
-opencv-python
-aiohttp
+fpie==0.2.4
+opencv-python==4.5.1.48
+aiohttp==3.7.4.post0

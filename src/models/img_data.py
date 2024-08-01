@@ -10,8 +10,16 @@ from src.config import OBJECT_CATEGORIES
 
 class BaseImgData:
     def __init__(self, img_path: Path, label: str):
+        print(f"Initializing BaseImgData with img_path: {img_path} and label: {label}")
+        print(f"OBJECT_CATEGORIES: {OBJECT_CATEGORIES}")
         self.img_path = img_path
         self.label = label
+        matching_categories = [f["id"] for f in OBJECT_CATEGORIES if label == f["name"]]
+        if not matching_categories:
+            print(f"No matching category found for label: {label}")
+        else:
+            print(f"Matching category found: {matching_categories[0]}")
+    
         self.label_id = [f["id"] for f in OBJECT_CATEGORIES if label == f["name"]][0]
         self.load_complementary_data()
 

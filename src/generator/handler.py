@@ -95,7 +95,7 @@ def load_relevant_data(
     output_dir.mkdir(exist_ok=True)
     # Objects
     object_files = load_data_from_split_file(object_json, split_type)
-    labels = ["box"] * len(object_files)
+    labels = ["blue_truck_cab"] * len(object_files)
     objects_data = [ImgDataRGBA(object_files[i], labels[i]) for i in range(len(labels))]
     random.shuffle(objects_data)
     # Distractors

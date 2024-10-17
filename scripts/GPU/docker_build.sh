@@ -1,1 +1,1 @@
-docker build -t generate_parcel2d . -f Dockerfile_GPU
+docker build -t generate_synthetic_data_gpu . -f Dockerfile_GPU

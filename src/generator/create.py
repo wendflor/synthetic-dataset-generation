@@ -122,6 +122,7 @@ def create_image_anno(
                 foreground, mask, o_h, o_w = augment_rotation(
                     foreground, bg_h, mask, max_degrees, bg_w
                 )
+            
             # Determine position
             xmin, xmax, ymin, ymax = img_data.get_annotation_from_mask()
             x, y, attempt = find_valid_object_position(
@@ -142,8 +143,10 @@ def create_image_anno(
             if idx >= len(objects):
                 continue
         if attempt == MAX_ATTEMPTS_TO_SYNTHESIZE:
+            print('reached max attempts to synthesize')
             continue  # could not create image yet, thus trying again
         else:
+            
             break  # found synthesized image, thus break
 
     adjust_masks_for_occlusion(masks)  # remove overlay due to occlusion

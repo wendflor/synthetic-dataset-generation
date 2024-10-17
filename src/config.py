@@ -34,7 +34,7 @@ MINFILTER_SIZE = 3
 
 # Other
 OBJECT_CATEGORIES = [
-    {"id": 0, "name": "blue_truck_cab"}, 
+    {"id": 0, "name": "red_truck_cab"}, 
     
     {"id": 2, "name": "distractor"},
 ]  # note: distractor needs to be second position

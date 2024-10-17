@@ -1,13 +1,17 @@
 {
     "test": [
-        
+        "color_0011.jpg",
+        "color_0012.jpg",
+        "color_0010.jpg"
     ],
     "train": [
-        "port-ga68773dee_1280.jpg",
-        "road-g1883e1352_1280.jpg",
-        "sunset-g459b98400_1280.jpg"
+        "color_0012.jpg",
+        "color_0011.jpg",
+        "color_0010.jpg"
     ],
     "validation": [
-        
+        "color_0012.jpg",
+        "color_0011.jpg",
+        "color_0010.jpg"
     ]
 }

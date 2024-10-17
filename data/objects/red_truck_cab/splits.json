@@ -1,0 +1,44 @@
+{
+    "path": "/app/data/scraped/05_selection",
+    "test": [
+        "red_truck_cab_01.png",
+        "red_truck_cab_03.png",
+        "red_truck_cab_06.png",
+        "red_truck_cab_07.png",
+        "red_truck_cab_11.png",
+        "red_truck_cab_20.png",
+        "red_truck_cab_24.png"
+    ],
+    "train": [
+        "red_truck_cab_02.png",
+        "red_truck_cab_04.png",
+        "red_truck_cab_05.png",
+        "red_truck_cab_08.png",
+        "red_truck_cab_09.png",
+        "red_truck_cab_10.png",
+        "red_truck_cab_12.png",
+        "red_truck_cab_13.png",
+        "red_truck_cab_14.png",
+        "red_truck_cab_15.png",
+        "red_truck_cab_18.png",
+        "red_truck_cab_19.png",
+        "red_truck_cab_21.png",
+        "red_truck_cab_22.png",
+        "red_truck_cab_23.png",
+        "red_truck_cab_25.png",
+        "red_truck_cab_27.png",
+        "red_truck_cab_29.png",
+        "red_truck_cab_32.png",
+        "red_truck_cab_34.png",
+        "red_truck_cab_35.png"
+    ],
+    "validation": [
+        "red_truck_cab_16.png",
+        "red_truck_cab_17.png",
+        "red_truck_cab_26.png",
+        "red_truck_cab_28.png",
+        "red_truck_cab_30.png",
+        "red_truck_cab_31.png",
+        "red_truck_cab_33.png"
+    ]
+}

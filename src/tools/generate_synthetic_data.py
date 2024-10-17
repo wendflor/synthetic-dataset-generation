@@ -16,20 +16,20 @@ DATA_DIR = ROOT / "data"
 
 
 if __name__ == "__main__":
-    dataset_name = "truck_cab_dataset_blue"  # Give your dataset a name
+    dataset_name = "truck_cab_dataset_red"  # Give your dataset a name
     output_dir = (DATA_DIR / dataset_name).resolve()
     if output_dir.exists():
         shutil.rmtree(output_dir.as_posix())
     output_dir.mkdir()
-    docker = False # Check variable
+    docker = False# Check variable
     if not docker:
         # Adjust paths here if you are not using Docker
         distractor_json = ROOT / "data/distractors/splits.json"
-        object_json = ROOT / "data/objects/splits.json"
+        object_json = ROOT / "data/objects/red_truck_cab/splits.json"
         background_json = ROOT / "data/backgrounds/splits.json"
     else:
         distractor_json = "/data/distractors/splits.json"
-        object_json = "/data/objects/splits.json"
+        object_json = "/data/objects/red_truck_cab/splits.json"
         background_json = "/data/backgrounds/splits.json"
     generate_synthetic_dataset(
         output_dir=str(output_dir),
@@ -41,7 +41,7 @@ if __name__ == "__main__":
             "validation": 30,
             "test": 30,
         },  # multiplied by blending methods,
-        dontocclude=True,  # enable occlusion checking of objects
+        dontocclude=False,  # enable occlusion checking of objects
         rotation=True,  # enable random rotation of objects
         scale=True,  # enable random scaling of objects
         multithreading=True,  # enable multithreading for faster dataset generation
